@@ -10,7 +10,7 @@
             border: 1px solid;
         }
         table{
-            width: 500px;
+            width: 450px;
             height: 170px;
             font-family:'Courier New', Courier, monospace
         }    
@@ -20,35 +20,53 @@
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th colspan="2" style="font-size:x-large; color:aliceblue;">SỞ THÍCH CỦA BẠN</th>
-        </tr>
-        <tr>
-            <td style="vertical-align:top; text-align: right; font-size:large;">
-                <label for="name"><span style="color: blue;">Họ và tên</span></label> <br>
-                <label for="email"><span style="color: blue;">Email</span></label> <br>
-                <label for="hobby"><span style="color: blue;" >Sở thích</span></label> 
-            </td>
-            <td style="vertical-align:top; ">
-                <form action="formsimple.html" method="get">
-                    <input type="text" id="name" name="name"> <br>
-                    <input type="text" id="email" name="email"> <br>
-                    <input type="checkbox" name="hobby"><span style="color: red;">Thể thao</span>
-                    <input type="checkbox" name="hobby"><span style="color: red;">Âm nhạc</span>
-                    <input type="checkbox" name="hobby"><span style="color: red;">Đọc sách</span>
-                    <br>
-                    <input type="checkbox" name="hobby"><span style="color: red;">Lướt web</span>
-                    <input type="checkbox" name="hobby"><span style="color: red;">Chơi game</span>
-                    <input type="checkbox" name="hobby"><span style="color: red;">Điện ảnh</span>
-                    <br>
+    <form action="formsimple.html" method="get">
+        <table>
+            <tr>
+                <th colspan="4" style="font-size:x-large; color:aliceblue;">SỞ THÍCH CỦA BẠN</th>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; text-align: right; font-size:large;">
+                    <label for="name"><span style="color: blue;">Họ và tên</span></label> 
+                </td>
+                <td colspan="3">
+                    <input type="text" id="name" name="name">
+                </td>
+            </tr> 
+            <tr>
+                <td style="vertical-align:top; text-align: right; font-size:large;">
+                    <label for="email"><span style="color: blue;">Email</span></label> 
+                </td>
+                <td colspan="3">
+                    <input type="text" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; text-align: right; font-size:large;">
+                    <label for="hobby"><span style="color: blue;" >Sở thích</span></label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hobby"><span style="color: red;">Thể thao</span><br>
+                    <input type="checkbox" name="hobby"><span style="color: red;">Lướt web</span><br>
                     <input type="checkbox" name="hobby"><span style="color: red;">Du lịch</span>
-                    <br>
+                </td>
+                <td style="vertical-align: top;">
+                    <input type="checkbox" name="hobby"><span style="color: red;">Âm nhạc</span><br>
+                    <input type="checkbox" name="hobby"><span style="color: red;">Chơi game</span><br>
+                </td>
+                <td style="vertical-align: top;">
+                    <input type="checkbox" name="hobby"><span style="color: red;">Đọc sách</span><br>
+                    <input type="checkbox" name="hobby"><span style="color: red;">Điện ảnh</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
                     <input type="submit" name="send" value="Gửi thông tin">
-                    <input type="reset" name="reset" value="Nhập lại">           
-                </form>
-            </td>
-        </tr> 
-    </table>
+                    <input type="reset" name="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
